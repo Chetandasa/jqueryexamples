@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jquery Ex 1</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+  <p id="one">para one</p>
+  <p class="two">para two</p>
+  <p class="two">para three</p>
+  <button id="btm1">click show</button>
+  <button id="btm2">click hide</button>
+
+<!-- $ etla Jquery la fix $ untadi ani # unde ga adi meda <p> la unde sudu id danku # vatadi ani <p> la class unde sudu danki . vatale .one etla undale 
+  ani 3000 aie 2000 unde sudu ada script la ainde 1000 aite 1 second 2000 ante 2 second -->
+
+
+  <script>
+    $("#btm1").click(function(){
+      $("#one").show(3000)
+    })
+    $("#btm2").click(function(){
+      $("#one").hide(2000)
+    })
+  </script>
+
+</body>
+</html>

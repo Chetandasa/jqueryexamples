@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jquery Ex 4</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <style>
+    div{
+      width: 200px;
+      height: 200px;
+      border: 2px solid red;
+      background-color: pink;
+    }
+  </style>
+
+</head>
+<body>
+  <p id="one">para one <a href="">link</a> </p>
+  <p class="two">para two</p>
+  <p class="two">para three</p>
+  <div></div>
+  <button id="btm1">click show</button>
+  <button id="btm2">click hide</button>
+
+  <script>
+    $("#btm1").click(function(){
+      var text = $("#one").text()
+       alert(text); })
+
+  </script>
+
+</body>
+</html>

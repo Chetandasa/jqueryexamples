@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jquery Ex 3</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <style>
+    div{
+      width: 200px;
+      height: 200px;
+      border: 2px solid red;
+      background-color: pink;
+    }
+  </style>
+
+  <!-- script etla meda pan vataku vadsadi head la only danki etla ani ala code chayale ela $(document).ready(function(){  eda bracket la code chayale........ }  -->
+  <script>
+    $(document).ready(function(){
+      $("#btm1").on({
+      click:function(){$("div").css("background-color","black")},
+      dblclick:function(){$("div").fadeOut(2000)},
+    })
+    })
+  </script>
+
+</head>
+<body>
+  <p id="one">para one</p>
+  <p class="two">para two</p>
+  <p class="two">para three</p>
+  <div></div>
+  <button id="btm1">click show</button>
+  <button id="btm2">click hide</button>
+
+
+</body>
+</html>
